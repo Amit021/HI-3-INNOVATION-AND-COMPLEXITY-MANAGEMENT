@@ -1,0 +1,86 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 960px;
+    height: 500px;
+    position: relative;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+path.slice {
+    stroke-width: 2px;
+    stroke: white;
+}
+
+polyline {
+    opacity: 0.3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+
+.text {
+    font-size: 12px;
+    cursor: pointer;
+    fill: black;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.bar-chart-section h2 {
+    margin-left: 10px;
+}
+
+.chart-container {
+    margin-top: 20px;
+}
+
+rect:hover {
+    stroke-width: 2px;
+    stroke: #333;
+}
+
+/* Styles for Treemap Visualization */
+
+.grandparent rect {
+    fill: #ffcc80; /* Background color for the grandparent rectangle */
+    stroke: #fff; /* Stroke color for the grandparent rectangle */
+}
+
+.grandparent:hover rect {
+fill: #ffb74d; /* Background color for the grandparent rectangle on hover */
+}
+
+.children rect.parent {
+fill: #f0f4c3; /* Background color for parent rectangles */
+fill-opacity: 0.5; /* Opacity for parent rectangles */
+}
+
+.children rect.child {
+fill: #aed581; /* Background color for child rectangles */
+}
+
+.grandparent text,
+.children text {
+fill: #333; /* Text color for grandparent and children */
+font-size: 14px; /* Font size for grandparent and children text */
+font-weight: bold; /* Bold font for grandparent and children text */
+}
+
+.children rect.parent:hover {
+fill: #dce775; /* Background color for parent rectangles on hover */
+}
+
+.children rect.child:hover {
+fill: #81c784; /* Background color for child rectangles on hover */
+}
+

@@ -1,13 +1,12 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    width: 960px;
-    height: 500px;
+    width: 100%;
+    height: auto;
     position: relative;
+    padding: 20px;
 }
 
 svg {
-    width: 100%;
-    height: 100%;
     background-color: #f8f9fa;
     border-radius: 8px;
 }
@@ -49,38 +48,63 @@ rect:hover {
     stroke: #333;
 }
 
-/* Styles for Treemap Visualization */
-
 .grandparent rect {
-    fill: #ffcc80; /* Background color for the grandparent rectangle */
-    stroke: #fff; /* Stroke color for the grandparent rectangle */
+    fill: #ffcc80;
+    stroke: #fff;
 }
 
 .grandparent:hover rect {
-fill: #ffb74d; /* Background color for the grandparent rectangle on hover */
+    fill: #ffb74d;
 }
 
 .children rect.parent {
-fill: #f0f4c3; /* Background color for parent rectangles */
-fill-opacity: 0.5; /* Opacity for parent rectangles */
+    fill: #f0f4c3;
+    fill-opacity: 0.5;
 }
 
 .children rect.child {
-fill: #aed581; /* Background color for child rectangles */
+    fill: #aed581;
 }
 
 .grandparent text,
 .children text {
-fill: #333; /* Text color for grandparent and children */
-font-size: 14px; /* Font size for grandparent and children text */
-font-weight: bold; /* Bold font for grandparent and children text */
+    fill: #333;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .children rect.parent:hover {
-fill: #dce775; /* Background color for parent rectangles on hover */
+    fill: #dce775;
 }
 
 .children rect.child:hover {
-fill: #81c784; /* Background color for child rectangles on hover */
+    fill: #81c784;
 }
+
+.chart {
+    margin-bottom: 40px;
+}
+
+.category-heading {
+    font-size: 32px; /* Adjust this value to make the text larger or smaller */
+    font-weight: bold;
+    margin-bottom: 10px; /* Optional: add some space between the heading and the treemap */
+    color: rgba(1, 11, 22, 0.795); /* Optional: adjust the color */
+
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font: 18px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    
+}
+
 

@@ -9,25 +9,21 @@
     <script src="https://d3js.org/d3.v6.js"></script>
     <script src="{% static 'data_visualization/script.js' %}" defer></script>
 </head>
-
 <body>
     <h1>Allergy Data Visualizations</h1>
 
     <div class="chart" id="my_dataviz">
         <h2>Pie Chart: Allergy Categories</h2>
-        <svg id="pieChart" width="500" height="0"></svg>
+        <svg id="pieChart" height="0"></svg>
     </div>
 
-    <div class="chart" id="treemapSVG">
+    <div id="treemapsContainer">
         <h2>Treemaps: Specific Reasons Distribution by Category</h2>
-        <svg id="treemapSVG" width="500" height="0"></svg>
     </div>
 
     <div class="chart" id="my_dataviz2">
         <h2>Stacked Bar Chart: Specific Reasons by Criticality</h2>
-        <svg id="barChartSection" width="800" height="0"></svg>
+        <svg id="barChartSection" height="0"></svg>
     </div>
-    
 </body>
 </html>
-

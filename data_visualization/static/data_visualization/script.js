@@ -1,4 +1,3 @@
-
 function fetchAllergyData() {
     return fetch('/data_visualization/api/allergy-data/')
         .then(response => {
@@ -7,32 +6,28 @@ function fetchAllergyData() {
             }
             return response.json();
         })
-        .then(data => data)  // This automatically returns the fetched data
+        .then(data => data)
         .catch(error => {
             console.error('Error fetching allergy data:', error);
-            throw error;  // Continue to propagate the error to be caught by the caller
+            throw error;
         });
 }
 
 function transformDataForTreemap(data) {
-    // Log the input data to ensure it's in the expected format
     console.log("Received data for transformation:", data);
 
-    // Check if the data is an array and not empty
     if (!Array.isArray(data) || data.length === 0) {
         console.error("Data is not an array or is empty");
         return null;
     }
 
     try {
-        // Perform the rollup operation
-        const nestedData = d3.rollup(data, 
-            v => v.length, // Count the occurrences of each specific reason
-            d => d.category, 
+        const nestedData = d3.rollup(data,
+            v => v.length,
+            d => d.category,
             d => d.specific_reason
         );
 
-        // Transform the nested data into a hierarchical structure
         const hierarchicalData = {
             name: "AllergyData",
             children: Array.from(nestedData, ([category, reasons]) => ({
@@ -51,9 +46,9 @@ function transformDataForTreemap(data) {
     }
 }
 
-function drawPieChart(data) {
-    const pie_width = 960,
-          pie_height = 500,
+function drawPieChart() {
+    const pie_width = 1920,
+          pie_height = 1080,
           pie_margin = 100;
 
     const radius = Math.min(pie_width, pie_height) / 2 - pie_margin;
@@ -67,22 +62,19 @@ function drawPieChart(data) {
 
     var data = d3.rollup(allergyData, v => v.length, d => d.category);
 
-    // Calculate total
     var total = d3.sum(Array.from(data.values()));
 
-    // Set the color scale
     var color = d3.scaleOrdinal()
       .domain(Array.from(data.keys()))
       .range(d3.schemeDark2);
     
     var pie = d3.pie()
-      .sort(null) // Do not sort group by size
+      .sort(null)
       .value(d => d[1]);
     var data_ready = pie(Array.from(data.entries()));
 
-
     var arc = d3.arc()
-      .innerRadius(radius * 0.5)         // This is the size of the donut hole
+      .innerRadius(radius * 0.5)
       .outerRadius(radius * 0.8);
 
     var outerArc = d3.arc()
@@ -107,64 +99,75 @@ function drawPieChart(data) {
         .style("fill", "none")
         .attr("stroke-width", 1)
         .attr('points', function(d) {
-          var posA = arc.centroid(d) // line insertion in the slice
-          var posB = outerArc.centroid(d) // line break: we use the other arc generator that has been built only for that
-          var posC = outerArc.centroid(d); // Label position = almost the same as posB
-          var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2 // we need the angle to see if the X position will be at the extreme right or extreme left
-          posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1); // multiply by 1 or -1 to put it on the right or on the left
-          return [posA, posB, posC]
+          var posA = arc.centroid(d);
+          var posB = outerArc.centroid(d);
+          var posC = outerArc.centroid(d);
+          var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
+          posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1);
+          return [posA, posB, posC];
         });
+
     svg.selectAll('allLabels')
         .data(data_ready)
         .enter()
         .append('text')
-          .text( function(d) { return d.data[0]; })
+          .text(function(d) { 
+              var percentage = ((d.data[1] / total) * 100).toFixed(2);
+              return `${d.data[0]}: ${percentage}%`; 
+          })
           .attr('transform', function(d) {
               var pos = outerArc.centroid(d);
-              var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+              var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
               pos[0] = radius * 0.99 * (midangle < Math.PI ? 1 : -1);
               return 'translate(' + pos + ')';
           })
           .style('text-anchor', function(d) {
-              var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
-              return (midangle < Math.PI ? 'start' : 'end')
+              var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
+              return (midangle < Math.PI ? 'start' : 'end');
           });
-      
-      svg.append("text")
+
+    svg.append("text")
         .attr("text-anchor", "middle")
         .attr('font-size', '30px')
         .attr('y', 0)
         .text(`Total: ${total}`);
 }
 
+
 function drawTreemap(category, data) {
     console.log("Drawing treemap for category:", category);
     console.log("Data received for treemap:", data);
 
+    // Create a new container div for the category
+    const treemapContainer = d3.select("#treemapsContainer").append("div")
+        .attr("class", "treemap-category");
+
+    // Append the category name as a heading with a specific class
+    treemapContainer.append("h3")
+        .attr("class", "category-heading")
+        .text(category);
+
     const groupedData = d3.group(data, d => d.specific_reason);
     console.log("Grouped data:", groupedData);
 
-    const treemapContainer = d3.select("#treemapSVG");
-    if (treemapContainer.empty()) {
-        console.error("Treemap container not found.");
-        return; // Exit the function if the container does not exist
-    }
-
-    const width = 800, height = 500;
+    const width = 1980;
+    const height = 1080; // Adjust this value to change the height of the treemap
     const svg = treemapContainer.append("svg")
         .attr("width", width)
         .attr("height", height)
         .attr("class", "treemapSVG");
 
+    const total = data.length; // Total count for the entire category
+
     const treemapData = {
         "name": category,
         "children": Array.from(groupedData, ([reason, entries]) => ({
             "name": reason,
-            "size": entries.length
+            "size": entries.length,
+            "percentage": ((entries.length / total) * 100).toFixed(2) // Calculate percentage based on the entire category total
         }))
-    
-    
     };
+
     const treemapLayout = d3.treemap().size([width, height]).paddingInner(2);
 
     const root = d3.hierarchy(treemapData).sum(d => d.size).sort((a, b) => b.size - a.size);
@@ -176,34 +179,54 @@ function drawTreemap(category, data) {
         .enter().append("g")
         .attr("transform", d => `translate(${d.x0},${d.y0})`);
 
+    const tooltip = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
     nodes.append("rect")
         .attr("class", "treemap-rect")
         .attr("width", d => d.x1 - d.x0)
         .attr("height", d => d.y1 - d.y0)
-        .style("fill", (d, i) => d3.schemeCategory10[i % 10]);
+        .style("fill", (d, i) => d3.schemeCategory10[i % 10])
+        .on("mouseover", function (event, d) {
+            tooltip.transition()
+                .duration(200)
+                .style("opacity", .9);
+            tooltip.html(`${d.data.name}: ${d.data.percentage}%`)
+                .style("left", (event.pageX + 5) + "px")
+                .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mousemove", function (event) {
+            tooltip.style("left", (event.pageX + 5) + "px")
+                .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mouseout", function () {
+            tooltip.transition()
+                .duration(500)
+                .style("opacity", 0);
+        });
 
     nodes.append("text")
         .attr("x", 6)
         .attr("y", 20)
         .text(d => d.data.name)
         .style("font-size", "15px");
+
     console.log("Treemap data structured:", treemapData);
 }
-    
 
-// Function to draw the bar chart
-function drawBarChart(data) {
-    const margin = { top: 10, right: 30, bottom: 20, left: 50 },
-        width = 800 - margin.left - margin.right,
-        height = 1000 - margin.top - margin.bottom;
+
+function drawBarChart() {
+    const margin = { top: 100, right: 30, bottom: 20, left: 50 },
+          width = 1920 * 0.9,
+          height = 1080 * 0.8;
 
     const svg = d3.select("#my_dataviz2")
         .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+        .attr("width", 1920)
+        .attr("height", 1080)
         .append("g")
         .attr("transform", `translate(${margin.left},${margin.top})`);
-
 
     const categories = Array.from(new Set(allergyData.map(item => item.category)));
     const criticalities = Array.from(new Set(allergyData.map(item => item.criticality)));
@@ -212,15 +235,15 @@ function drawBarChart(data) {
         .domain(categories)
         .range([0, width])
         .padding(0.2);
-    
+
     svg.append("g")
         .attr("transform", `translate(0,${height})`)
         .call(d3.axisBottom(x).tickSizeOuter(0));
 
     const y = d3.scaleLinear()
-        .domain([0, 1000])
-        .range([ height, 0 ]);
-    
+        .domain([0, 200])
+        .range([height, 0]);
+
     svg.append("g")
         .call(d3.axisLeft(y));
 
@@ -228,9 +251,14 @@ function drawBarChart(data) {
         .domain(criticalities)
         .range(d3.schemeSet2);
 
+    const categoryCounts = {};
+    categories.forEach(cat => {
+        categoryCounts[cat] = allergyData.filter(item => item.category === cat).length;
+    });
+
     const stackedData = d3.stack()
         .keys(criticalities)
-        .value((group, crit) => group[crit] || 0) // Use the count of items for the given criticality, defaulting to 0 if undefined
+        .value((group, crit) => group[crit] || 0)
         (categories.map(cat => ({
             category: cat,
             ...criticalities.reduce((acc, crit) => ({
@@ -239,12 +267,17 @@ function drawBarChart(data) {
             }), {})
         })));
 
+    // Tooltip setup
+    const tooltip = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
     svg.append("g")
         .selectAll("g")
         .data(stackedData)
         .join("g")
         .attr("fill", d => color_rect(d.key))
-        .attr("class", d => "myRect " + d.key) // Add a class to each subgroup: their name
+        .attr("class", d => "myRect " + d.key)
         .selectAll("rect")
         .data(d => d)
         .join("rect")
@@ -253,32 +286,38 @@ function drawBarChart(data) {
         .attr("height", d => y(d[0]) - y(d[1]))
         .attr("width", x.bandwidth())
         .attr("stroke", "grey")
-        .on("mouseover", function (event, d) { // What happens when user hovers over a bar
-            // What subgroup are we hovering?
+        .on("mouseover", function (event, d) {
             const subGroupName = d3.select(this.parentNode).datum().key;
-            // Reduce opacity of all rects to 0.2
+            const count = d[1] - d[0];
+            const categoryTotal = categoryCounts[d.data.category];
+            const percentage = ((count / categoryTotal) * 100).toFixed(2);
+            tooltip.transition()
+                .duration(200)
+                .style("opacity", .9);
+            tooltip.html(`Category: ${d.data.category}<br>Criticality: ${subGroupName}<br>Count: ${count}<br>Percentage: ${percentage}%`)
+                .style("left", (event.pageX + 5) + "px")
+                .style("top", (event.pageY - 28) + "px");
             d3.selectAll(".myRect").style("opacity", 0.2);
-            // Highlight all rects of this subgroup with opacity 1. It is possible to select them since they have a specific class = their name.
             d3.selectAll("." + subGroupName).style("opacity", 1);
         })
-        .on("mouseleave", function (event, d) { // When user does not hover anymore
-            // Back to normal opacity: 1
+        .on("mousemove", function (event) {
+            tooltip.style("left", (event.pageX + 5) + "px")
+                .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mouseout", function () {
+            tooltip.transition()
+                .duration(500)
+                .style("opacity", 0);
             d3.selectAll(".myRect").style("opacity", 1);
         });
-
- 
-
 }
 
-        
 document.addEventListener('DOMContentLoaded', function () {
-    // Fetch allergyData and then call drawing functions
     fetchAllergyData().then(data => {
-        allergyData = data; // Assign fetched data to allergyData variable
-        drawPieChart(); // Call drawPieChart after data is loaded
-        drawBarChart(); // Call drawBarChart after data is loaded
+        allergyData = data;
+        drawPieChart();
+        drawBarChart();
 
-        // Call drawTreemap for each category
         const groupedByCategory = d3.group(allergyData, d => d.category);
         for (const [category, data] of groupedByCategory) {
             drawTreemap(category, data);

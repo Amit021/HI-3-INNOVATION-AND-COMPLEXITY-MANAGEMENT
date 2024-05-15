@@ -1,8 +1,8 @@
 {
     "resourceType": "Bundle",
-    "id": "227a8128-eeab-4604-a675-97ba1d0ba5d4",
+    "id": "e36f1d0e-2095-449f-9184-0421af77e91d",
     "meta": {
-        "lastUpdated": "2024-05-13T12:52:19.987+00:00"
+        "lastUpdated": "2024-05-15T08:56:16.426+00:00"
     },
     "type": "searchset",
     "link": [
@@ -12,7 +12,7 @@
         },
         {
             "relation": "next",
-            "url": "https://hapi.fhir.org/baseR4?_getpages=227a8128-eeab-4604-a675-97ba1d0ba5d4&_getpagesoffset=500&_count=500&_pretty=true&_bundletype=searchset"
+            "url": "https://hapi.fhir.org/baseR4?_getpages=e36f1d0e-2095-449f-9184-0421af77e91d&_getpagesoffset=500&_count=500&_pretty=true&_bundletype=searchset"
         }
     ],
     "entry": [
@@ -471,7 +471,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -561,7 +561,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -627,7 +627,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -729,7 +729,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -829,7 +829,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -899,7 +899,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -979,7 +979,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -1053,7 +1053,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -1133,7 +1133,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -1210,7 +1210,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -1289,7 +1289,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -1368,7 +1368,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -1447,7 +1447,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -1526,7 +1526,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -1605,7 +1605,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Environment"
                 ],
                 "criticality": "high",
                 "code": {
@@ -1613,10 +1613,10 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "102002",
-                            "display": "Hemoglobin Okaloosa"
+                            "display": "Pollen"
                         }
                     ],
-                    "text": "Hemoglobin Okaloosa"
+                    "text": "Pollen"
                 },
                 "patient": {
                     "reference": "Patient/1201"
@@ -1684,18 +1684,18 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Biologic"
                 ],
-                "criticality": "high",
+                "criticality": "low",
                 "code": {
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
                             "code": "3990003",
-                            "display": "Alkaline phosphatase bone isoenzyme"
+                            "display": "Mould"
                         }
                     ],
-                    "text": "Alkaline phosphatase bone isoenzyme"
+                    "text": "Mould"
                 },
                 "patient": {
                     "reference": "Patient/1201"
@@ -1763,7 +1763,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -1842,7 +1842,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -1921,7 +1921,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -2000,7 +2000,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -2079,7 +2079,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -2087,10 +2087,10 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "91937001",
-                            "display": "Seafood allergy"
+                            "display": "SeaFood allergy"
                         }
                     ],
-                    "text": "Seafood allergy"
+                    "text": "SeaFood allergy"
                 },
                 "patient": {
                     "reference": "Patient/1202"
@@ -2158,7 +2158,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -2237,7 +2237,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -2316,7 +2316,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -2324,10 +2324,10 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "91937001",
-                            "display": "Seafood allergy"
+                            "display": "SeaFood allergy"
                         }
                     ],
-                    "text": "Seafood allergy"
+                    "text": "SeaFood allergy"
                 },
                 "patient": {
                     "reference": "Patient/1316"
@@ -2395,7 +2395,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -2474,7 +2474,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -2553,7 +2553,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -2632,7 +2632,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -2711,7 +2711,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -2790,7 +2790,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -2940,7 +2940,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -2996,7 +2996,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p><p><b>type</b>: allergy</p><p><b>category</b>: food</p><p><b>criticality</b>: high</p><p><b>code</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>onset</b>: 01/01/2004</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>asserter</b>: <a>Patient/example</a></p><p><b>lastOccurrence</b>: 01/06/2012</p><p><b>note</b>: The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract.</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p><p><b>exposureRoute</b>: Subcutaneous route <span>(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p><p><b>note</b>: The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p></blockquote></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p><p><b>type</b>: allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: high</p><p><b>code</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>onset</b>: 01/01/2004</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>asserter</b>: <a>Patient/example</a></p><p><b>lastOccurrence</b>: 01/06/2012</p><p><b>note</b>: The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract.</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p><p><b>exposureRoute</b>: Subcutaneous route <span>(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p><p><b>note</b>: The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p></blockquote></div>"
                 },
                 "identifier": [
                     {
@@ -3024,7 +3024,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -3135,7 +3135,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -3206,7 +3206,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -3277,7 +3277,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -3348,7 +3348,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -3419,7 +3419,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -3490,7 +3490,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -3561,7 +3561,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -3632,7 +3632,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -3703,7 +3703,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -3771,7 +3771,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -3839,7 +3839,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -3907,7 +3907,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -3964,7 +3964,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -4020,7 +4020,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -4076,7 +4076,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -4143,7 +4143,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -4200,7 +4200,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -4268,7 +4268,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -4336,7 +4336,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -4389,7 +4389,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -4445,7 +4445,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -4513,7 +4513,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -4581,7 +4581,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -4649,7 +4649,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -4717,7 +4717,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -4785,7 +4785,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -4853,7 +4853,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -4921,7 +4921,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -4989,7 +4989,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -5057,7 +5057,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -5125,7 +5125,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -5197,7 +5197,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -5269,7 +5269,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -5341,7 +5341,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -5415,7 +5415,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -5489,7 +5489,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -5563,7 +5563,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -5637,7 +5637,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -5711,7 +5711,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -5786,7 +5786,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -5861,7 +5861,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -5935,7 +5935,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -6008,7 +6008,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -6125,7 +6125,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -6241,7 +6241,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -6358,7 +6358,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -6474,7 +6474,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -6591,7 +6591,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -6707,7 +6707,7 @@
                 ],
                 "type": "allergy",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -6826,7 +6826,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -6989,7 +6989,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -7076,7 +7076,7 @@
                 },
                 "type": "intolerance",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -7156,7 +7156,7 @@
                 },
                 "type": "intolerance",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -7233,7 +7233,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -7283,7 +7283,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -7333,7 +7333,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -7383,7 +7383,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -7433,7 +7433,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -7483,7 +7483,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -7533,7 +7533,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -7659,7 +7659,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -7985,7 +7985,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: medication</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Unconfirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span></p><p><b>category</b>: medication</p><p><b>criticality</b>: high</p><p><b>code</b>: Penicillin G <span>(Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>recordedDate</b>: 01/03/2010</p><p><b>recorder</b>: <a>Practitioner/13</a></p><h3>Reactions</h3><table><tr><td>-</td><td><b>Manifestation</b></td></tr><tr><td>*</td><td>Hives <span>(Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span></td></tr></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Medication</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Unconfirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span></p><p><b>category</b>: Medication</p><p><b>criticality</b>: high</p><p><b>code</b>: Penicillin G <span>(Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>recordedDate</b>: 01/03/2010</p><p><b>recorder</b>: <a>Practitioner/13</a></p><h3>Reactions</h3><table><tr><td>-</td><td><b>Manifestation</b></td></tr><tr><td>*</td><td>Hives <span>(Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span></td></tr></table></div>"
                 },
                 "identifier": [
                     {
@@ -8013,7 +8013,7 @@
                 },
                 "type": "intolerance",
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -8272,7 +8272,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: medication</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Unconfirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span></p><p><b>category</b>: medication</p><p><b>criticality</b>: high</p><p><b>code</b>: Penicillin G <span>(Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>recordedDate</b>: 01/03/2010</p><p><b>recorder</b>: <a>Practitioner/13</a></p><h3>Reactions</h3><table><tr><td>-</td><td><b>Manifestation</b></td></tr><tr><td>*</td><td>Hives <span>(Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span></td></tr></table></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Medication</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Unconfirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span></p><p><b>category</b>: Medication</p><p><b>criticality</b>: high</p><p><b>code</b>: Penicillin G <span>(Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>recordedDate</b>: 01/03/2010</p><p><b>recorder</b>: <a>Practitioner/13</a></p><h3>Reactions</h3><table><tr><td>-</td><td><b>Manifestation</b></td></tr><tr><td>*</td><td>Hives <span>(Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span></td></tr></table></div>"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -8293,7 +8293,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -8341,7 +8341,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p><p><b>type</b>: allergy</p><p><b>category</b>: food</p><p><b>criticality</b>: high</p><p><b>code</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>onset</b>: 01/01/2004</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>asserter</b>: <a>Patient/example</a></p><p><b>lastOccurrence</b>: 01/06/2012</p><p><b>note</b>: The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract.</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p><p><b>exposureRoute</b>: Subcutaneous route <span>(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p><p><b>note</b>: The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p></blockquote></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p><p><b>type</b>: allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: high</p><p><b>code</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>onset</b>: 01/01/2004</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>asserter</b>: <a>Patient/example</a></p><p><b>lastOccurrence</b>: 01/06/2012</p><p><b>note</b>: The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract.</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p><p><b>exposureRoute</b>: Subcutaneous route <span>(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p><p><b>note</b>: The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p></blockquote></div>"
                 },
                 "identifier": [
                     {
@@ -8369,7 +8369,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -8541,7 +8541,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -8591,7 +8591,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -8641,7 +8641,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -8691,7 +8691,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -8741,7 +8741,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -8791,7 +8791,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -8841,7 +8841,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -8891,7 +8891,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -8941,7 +8941,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -8991,7 +8991,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -9041,7 +9041,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -9091,7 +9091,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -9141,7 +9141,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -9191,7 +9191,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -9241,7 +9241,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -9291,7 +9291,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -9341,7 +9341,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -9447,7 +9447,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -9523,7 +9523,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -9629,7 +9629,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -9716,7 +9716,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -9822,7 +9822,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -9898,7 +9898,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -10004,7 +10004,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -10110,7 +10110,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -10216,7 +10216,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -10322,7 +10322,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -10428,7 +10428,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -10504,7 +10504,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -10610,7 +10610,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -10716,7 +10716,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -10822,7 +10822,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -10928,7 +10928,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -10977,7 +10977,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -11083,7 +11083,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -11189,7 +11189,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -11276,7 +11276,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "low",
                 "code": {
@@ -11455,7 +11455,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -11531,7 +11531,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -11607,7 +11607,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -11683,7 +11683,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -11831,7 +11831,7 @@
                     ]
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -12034,7 +12034,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p><p><b>type</b>: allergy</p><p><b>category</b>: food</p><p><b>criticality</b>: high</p><p><b>code</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>onset</b>: 01/01/2004</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>asserter</b>: <a>Patient/example</a></p><p><b>lastOccurrence</b>: 01/06/2012</p><p><b>note</b>: The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract.</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p><p><b>exposureRoute</b>: Subcutaneous route <span>(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p><p><b>note</b>: The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p></blockquote></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p><p><b>type</b>: allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: high</p><p><b>code</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>onset</b>: 01/01/2004</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>asserter</b>: <a>Patient/example</a></p><p><b>lastOccurrence</b>: 01/06/2012</p><p><b>note</b>: The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract.</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p><p><b>exposureRoute</b>: Subcutaneous route <span>(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p><p><b>note</b>: The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p></blockquote></div>"
                 },
                 "identifier": [
                     {
@@ -12062,7 +12062,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -12209,7 +12209,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -12282,7 +12282,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : example</p> <p> <b> identifier</b> : 49476534</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Confirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'confirmed' = 'Confirmed', given as 'Confirmed'})</span> </p> <p> <b> type</b> : allergy</p> <p> <b> category</b> : food</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Cashew nuts <span> (Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> recordedDate</b> : 09/10/2014 2:58:00 PM</p> <p> <b> recorder</b> : <a> Practitioner/example</a> </p> <p> <b> asserter</b> : <a> Patient/example</a> </p> <p> <b> lastOccurrence</b> : 01/06/2012</p> <p> <b> note</b> : The criticality is high becasue of the observed anaphylactic reaction when challenged\n         with cashew extract.</p> <blockquote> <p> <b> reaction</b> </p> <p> <b> substance</b> : cashew nut allergenic extract Injectable Product <span> (Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product',\n             given as 'cashew nut allergenic extract Injectable Product'})</span> </p> <p> <b> manifestation</b> : Anaphylactic reaction <span> (Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span> </p> <p> <b> description</b> : Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p> <p> <b> onset</b> : 12/06/2012</p> <p> <b> severity</b> : severe</p> <p> <b> exposureRoute</b> : Subcutaneous route <span> (Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span> </p> </blockquote> <blockquote> <p> <b> reaction</b> </p> <p> <b> manifestation</b> : Urticaria <span> (Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> severity</b> : moderate</p> <p> <b> note</b> : The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p> </blockquote> </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : example</p> <p> <b> identifier</b> : 49476534</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Confirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'confirmed' = 'Confirmed', given as 'Confirmed'})</span> </p> <p> <b> type</b> : allergy</p> <p> <b> category</b> : Food</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Cashew nuts <span> (Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> recordedDate</b> : 09/10/2014 2:58:00 PM</p> <p> <b> recorder</b> : <a> Practitioner/example</a> </p> <p> <b> asserter</b> : <a> Patient/example</a> </p> <p> <b> lastOccurrence</b> : 01/06/2012</p> <p> <b> note</b> : The criticality is high becasue of the observed anaphylactic reaction when challenged\n         with cashew extract.</p> <blockquote> <p> <b> reaction</b> </p> <p> <b> substance</b> : cashew nut allergenic extract Injectable Product <span> (Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product',\n             given as 'cashew nut allergenic extract Injectable Product'})</span> </p> <p> <b> manifestation</b> : Anaphylactic reaction <span> (Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span> </p> <p> <b> description</b> : Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p> <p> <b> onset</b> : 12/06/2012</p> <p> <b> severity</b> : severe</p> <p> <b> exposureRoute</b> : Subcutaneous route <span> (Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span> </p> </blockquote> <blockquote> <p> <b> reaction</b> </p> <p> <b> manifestation</b> : Urticaria <span> (Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> severity</b> : moderate</p> <p> <b> note</b> : The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p> </blockquote> </div>"
                 },
                 "identifier": [
                     {
@@ -12310,7 +12310,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -12409,7 +12409,7 @@
                 "language": "spanish",
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : example</p> <p> <b> identifier</b> : 49476534</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Confirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'confirmed' = 'Confirmed', given as 'Confirmed'})</span> </p> <p> <b> type</b> : allergy</p> <p> <b> category</b> : food</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Cashew nuts <span> (Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> recordedDate</b> : 09/10/2014 2:58:00 PM</p> <p> <b> recorder</b> : <a> Practitioner/example</a> </p> <p> <b> asserter</b> : <a> Patient/example</a> </p> <p> <b> lastOccurrence</b> : 01/06/2012</p> <p> <b> note</b> : The criticality is high becasue of the observed anaphylactic reaction when challenged\n         with cashew extract.</p> <blockquote> <p> <b> reaction</b> </p> <p> <b> substance</b> : cashew nut allergenic extract Injectable Product <span> (Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product',\n             given as 'cashew nut allergenic extract Injectable Product'})</span> </p> <p> <b> manifestation</b> : Anaphylactic reaction <span> (Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span> </p> <p> <b> description</b> : Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p> <p> <b> onset</b> : 12/06/2012</p> <p> <b> severity</b> : severe</p> <p> <b> exposureRoute</b> : Subcutaneous route <span> (Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span> </p> </blockquote> <blockquote> <p> <b> reaction</b> </p> <p> <b> manifestation</b> : Urticaria <span> (Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> severity</b> : moderate</p> <p> <b> note</b> : The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p> </blockquote> </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : example</p> <p> <b> identifier</b> : 49476534</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Confirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'confirmed' = 'Confirmed', given as 'Confirmed'})</span> </p> <p> <b> type</b> : allergy</p> <p> <b> category</b> : Food</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Cashew nuts <span> (Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> recordedDate</b> : 09/10/2014 2:58:00 PM</p> <p> <b> recorder</b> : <a> Practitioner/example</a> </p> <p> <b> asserter</b> : <a> Patient/example</a> </p> <p> <b> lastOccurrence</b> : 01/06/2012</p> <p> <b> note</b> : The criticality is high becasue of the observed anaphylactic reaction when challenged\n         with cashew extract.</p> <blockquote> <p> <b> reaction</b> </p> <p> <b> substance</b> : cashew nut allergenic extract Injectable Product <span> (Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product',\n             given as 'cashew nut allergenic extract Injectable Product'})</span> </p> <p> <b> manifestation</b> : Anaphylactic reaction <span> (Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span> </p> <p> <b> description</b> : Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p> <p> <b> onset</b> : 12/06/2012</p> <p> <b> severity</b> : severe</p> <p> <b> exposureRoute</b> : Subcutaneous route <span> (Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span> </p> </blockquote> <blockquote> <p> <b> reaction</b> </p> <p> <b> manifestation</b> : Urticaria <span> (Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> severity</b> : moderate</p> <p> <b> note</b> : The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p> </blockquote> </div>"
                 },
                 "identifier": [
                     {
@@ -12437,7 +12437,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -12536,7 +12536,7 @@
                 "language": "spanish",
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : example</p> <p> <b> identifier</b> : 49476534</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Confirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'confirmed' = 'Confirmed', given as 'Confirmed'})</span> </p> <p> <b> type</b> : allergy</p> <p> <b> category</b> : food</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Cashew nuts <span> (Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> recordedDate</b> : 09/10/2014 2:58:00 PM</p> <p> <b> recorder</b> : <a> Practitioner/example</a> </p> <p> <b> asserter</b> : <a> Patient/example</a> </p> <p> <b> lastOccurrence</b> : 01/06/2012</p> <p> <b> note</b> : The criticality is high becasue of the observed anaphylactic reaction when challenged\n         with cashew extract.</p> <blockquote> <p> <b> reaction</b> </p> <p> <b> substance</b> : cashew nut allergenic extract Injectable Product <span> (Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product',\n             given as 'cashew nut allergenic extract Injectable Product'})</span> </p> <p> <b> manifestation</b> : Anaphylactic reaction <span> (Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span> </p> <p> <b> description</b> : Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p> <p> <b> onset</b> : 12/06/2012</p> <p> <b> severity</b> : severe</p> <p> <b> exposureRoute</b> : Subcutaneous route <span> (Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span> </p> </blockquote> <blockquote> <p> <b> reaction</b> </p> <p> <b> manifestation</b> : Urticaria <span> (Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> severity</b> : moderate</p> <p> <b> note</b> : The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p> </blockquote> </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : example</p> <p> <b> identifier</b> : 49476534</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Confirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'confirmed' = 'Confirmed', given as 'Confirmed'})</span> </p> <p> <b> type</b> : allergy</p> <p> <b> category</b> : Food</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Cashew nuts <span> (Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> recordedDate</b> : 09/10/2014 2:58:00 PM</p> <p> <b> recorder</b> : <a> Practitioner/example</a> </p> <p> <b> asserter</b> : <a> Patient/example</a> </p> <p> <b> lastOccurrence</b> : 01/06/2012</p> <p> <b> note</b> : The criticality is high becasue of the observed anaphylactic reaction when challenged\n         with cashew extract.</p> <blockquote> <p> <b> reaction</b> </p> <p> <b> substance</b> : cashew nut allergenic extract Injectable Product <span> (Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product',\n             given as 'cashew nut allergenic extract Injectable Product'})</span> </p> <p> <b> manifestation</b> : Anaphylactic reaction <span> (Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span> </p> <p> <b> description</b> : Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p> <p> <b> onset</b> : 12/06/2012</p> <p> <b> severity</b> : severe</p> <p> <b> exposureRoute</b> : Subcutaneous route <span> (Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span> </p> </blockquote> <blockquote> <p> <b> reaction</b> </p> <p> <b> manifestation</b> : Urticaria <span> (Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> severity</b> : moderate</p> <p> <b> note</b> : The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p> </blockquote> </div>"
                 },
                 "identifier": [
                     {
@@ -12564,7 +12564,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -12691,7 +12691,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -12790,7 +12790,7 @@
                 "language": "spanish",
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : example</p> <p> <b> identifier</b> : 49476534</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Confirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'confirmed' = 'Confirmed', given as 'Confirmed'})</span> </p> <p> <b> type</b> : allergy</p> <p> <b> category</b> : food</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Cashew nuts <span> (Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> recordedDate</b> : 09/10/2014 2:58:00 PM</p> <p> <b> recorder</b> : <a> Practitioner/example</a> </p> <p> <b> asserter</b> : <a> Patient/example</a> </p> <p> <b> lastOccurrence</b> : 01/06/2012</p> <p> <b> note</b> : The criticality is high becasue of the observed anaphylactic reaction when challenged\n         with cashew extract.</p> <blockquote> <p> <b> reaction</b> </p> <p> <b> substance</b> : cashew nut allergenic extract Injectable Product <span> (Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product',\n             given as 'cashew nut allergenic extract Injectable Product'})</span> </p> <p> <b> manifestation</b> : Anaphylactic reaction <span> (Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span> </p> <p> <b> description</b> : Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p> <p> <b> onset</b> : 12/06/2012</p> <p> <b> severity</b> : severe</p> <p> <b> exposureRoute</b> : Subcutaneous route <span> (Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span> </p> </blockquote> <blockquote> <p> <b> reaction</b> </p> <p> <b> manifestation</b> : Urticaria <span> (Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> severity</b> : moderate</p> <p> <b> note</b> : The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p> </blockquote> </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : example</p> <p> <b> identifier</b> : 49476534</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Confirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'confirmed' = 'Confirmed', given as 'Confirmed'})</span> </p> <p> <b> type</b> : allergy</p> <p> <b> category</b> : Food</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Cashew nuts <span> (Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> recordedDate</b> : 09/10/2014 2:58:00 PM</p> <p> <b> recorder</b> : <a> Practitioner/example</a> </p> <p> <b> asserter</b> : <a> Patient/example</a> </p> <p> <b> lastOccurrence</b> : 01/06/2012</p> <p> <b> note</b> : The criticality is high becasue of the observed anaphylactic reaction when challenged\n         with cashew extract.</p> <blockquote> <p> <b> reaction</b> </p> <p> <b> substance</b> : cashew nut allergenic extract Injectable Product <span> (Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product',\n             given as 'cashew nut allergenic extract Injectable Product'})</span> </p> <p> <b> manifestation</b> : Anaphylactic reaction <span> (Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span> </p> <p> <b> description</b> : Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p> <p> <b> onset</b> : 12/06/2012</p> <p> <b> severity</b> : severe</p> <p> <b> exposureRoute</b> : Subcutaneous route <span> (Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span> </p> </blockquote> <blockquote> <p> <b> reaction</b> </p> <p> <b> manifestation</b> : Urticaria <span> (Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span> </p> <p> <b> onset</b> : 01/01/2004</p> <p> <b> severity</b> : moderate</p> <p> <b> note</b> : The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p> </blockquote> </div>"
                 },
                 "identifier": [
                     {
@@ -12818,7 +12818,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -12945,7 +12945,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -13100,7 +13100,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -13252,7 +13252,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -13325,7 +13325,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">&lt;div&gt;&lt;b&gt;Category:&lt;/b&gt;  medication  &lt;b&gt;Display:&lt;/b&gt;  Penicillin G  &lt;b&gt;Severity:&lt;/b&gt;  high &lt;b&gt;Reaction:&lt;/b&gt;  Hives&lt;/div&gt;</div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">&lt;div&gt;&lt;b&gt;Category:&lt;/b&gt;  Medication  &lt;b&gt;Display:&lt;/b&gt;  Penicillin G  &lt;b&gt;Severity:&lt;/b&gt;  high &lt;b&gt;Reaction:&lt;/b&gt;  Hives&lt;/div&gt;</div>"
                 },
                 "clinicalStatus": {
                     "text": "active"
@@ -13334,7 +13334,7 @@
                     "text": "unconfirmed"
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -13434,7 +13434,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -13561,7 +13561,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -13634,7 +13634,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">&lt;b&gt;Category:&lt;/b&gt;  medication  &lt;b&gt;Display:&lt;/b&gt;  Penicillin G  &lt;b&gt;Severity:&lt;/b&gt;  high &lt;b&gt;Reaction:&lt;/b&gt;  Hives</div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">&lt;b&gt;Category:&lt;/b&gt;  Medication  &lt;b&gt;Display:&lt;/b&gt;  Penicillin G  &lt;b&gt;Severity:&lt;/b&gt;  high &lt;b&gt;Reaction:&lt;/b&gt;  Hives</div>"
                 },
                 "clinicalStatus": {
                     "text": "active"
@@ -13643,7 +13643,7 @@
                     "text": "unconfirmed"
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -13691,7 +13691,7 @@
                     "text": "active"
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "patient": {
                     "reference": "Patient/618606"
@@ -13713,7 +13713,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">&lt;b&gt;Category:&lt;/b&gt;  medication  &lt;b&gt;Display:&lt;/b&gt;  Penicillin G  &lt;b&gt;Severity:&lt;/b&gt;  high &lt;b&gt;Reaction:&lt;/b&gt;  Hives</div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">&lt;b&gt;Category:&lt;/b&gt;  Medication  &lt;b&gt;Display:&lt;/b&gt;  Penicillin G  &lt;b&gt;Severity:&lt;/b&gt;  high &lt;b&gt;Reaction:&lt;/b&gt;  Hives</div>"
                 },
                 "clinicalStatus": {
                     "text": "active"
@@ -13722,7 +13722,7 @@
                     "text": "unconfirmed"
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -13768,7 +13768,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">&lt;b&gt;Category:&lt;/b&gt;  medication  &lt;b&gt;Display:&lt;/b&gt;  Penicillin G  &lt;b&gt;Severity:&lt;/b&gt;  high &lt;b&gt;Reaction:&lt;/b&gt;  Hives</div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">&lt;b&gt;Category:&lt;/b&gt;  Medication  &lt;b&gt;Display:&lt;/b&gt;  Penicillin G  &lt;b&gt;Severity:&lt;/b&gt;  high &lt;b&gt;Reaction:&lt;/b&gt;  Hives</div>"
                 },
                 "clinicalStatus": {
                     "text": "active"
@@ -13777,7 +13777,7 @@
                     "text": "unconfirmed"
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -13823,7 +13823,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">&lt;b&gt;Category:&lt;/b&gt;  medication  &lt;b&gt;Display:&lt;/b&gt;  Penicillin G  &lt;b&gt;Severity:&lt;/b&gt;  high &lt;b&gt;Reaction:&lt;/b&gt;  Hives</div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">&lt;b&gt;Category:&lt;/b&gt;  Medication  &lt;b&gt;Display:&lt;/b&gt;  Penicillin G  &lt;b&gt;Severity:&lt;/b&gt;  high &lt;b&gt;Reaction:&lt;/b&gt;  Hives</div>"
                 },
                 "clinicalStatus": {
                     "text": "active"
@@ -13832,7 +13832,7 @@
                     "text": "unconfirmed"
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -13880,7 +13880,7 @@
                     "text": "active"
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "patient": {
                     "reference": "Patient/618606"
@@ -13904,7 +13904,7 @@
                     "text": "active"
                 },
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "patient": {
                     "reference": "Patient/618606"
@@ -13926,7 +13926,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">&lt;b&gt;Category:&lt;/b&gt;  medication  &lt;b&gt;Display:&lt;/b&gt;  Penicillin G  &lt;b&gt;Severity:&lt;/b&gt;  high &lt;b&gt;Reaction:&lt;/b&gt;  Hives</div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">&lt;b&gt;Category:&lt;/b&gt;  Medication  &lt;b&gt;Display:&lt;/b&gt;  Penicillin G  &lt;b&gt;Severity:&lt;/b&gt;  high &lt;b&gt;Reaction:&lt;/b&gt;  Hives</div>"
                 },
                 "clinicalStatus": {
                     "text": "active"
@@ -13935,7 +13935,7 @@
                     "text": "unconfirmed"
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -14032,7 +14032,7 @@
                 "language": "DDDDDDD",
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : Medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : Medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -14053,7 +14053,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -14102,7 +14102,7 @@
                 "language": "DDDDDDD",
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : Medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : Medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -14123,7 +14123,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -14171,7 +14171,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : Medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : Medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -14192,7 +14192,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -14241,7 +14241,7 @@
                 "language": "DDDDDDD",
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : Medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : Medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -14262,7 +14262,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -14311,7 +14311,7 @@
                 "language": "DDDDDDD",
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : Medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : Medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -14332,7 +14332,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -14381,7 +14381,7 @@
                 "language": "DDDDDDD",
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : Medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : Medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -14402,7 +14402,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -14451,7 +14451,7 @@
                 "language": "DDDDDDD",
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : Medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : Medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -14472,7 +14472,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -14521,7 +14521,7 @@
                 "language": "DDDDDDD",
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : Medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : Medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -14542,7 +14542,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -14594,7 +14594,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -14665,7 +14665,7 @@
                 "language": "DDDDDDD",
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : Medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : Medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -14684,7 +14684,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -14749,7 +14749,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -14900,7 +14900,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -15175,7 +15175,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -15241,7 +15241,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -15307,7 +15307,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -15373,7 +15373,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -15439,7 +15439,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -15505,7 +15505,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -15571,7 +15571,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -15637,7 +15637,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -15703,7 +15703,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -15769,7 +15769,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -15835,7 +15835,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -15901,7 +15901,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -15967,7 +15967,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -16033,7 +16033,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -16099,7 +16099,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -16165,7 +16165,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -16231,7 +16231,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -16297,7 +16297,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -16363,7 +16363,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -16429,7 +16429,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -16495,7 +16495,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -16561,7 +16561,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -16627,7 +16627,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -16693,7 +16693,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -16759,7 +16759,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -16825,7 +16825,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -16891,7 +16891,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -16957,7 +16957,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -17023,7 +17023,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -17089,7 +17089,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -17155,7 +17155,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -17221,7 +17221,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -17287,7 +17287,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -17353,7 +17353,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -17419,7 +17419,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -17485,7 +17485,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -17551,7 +17551,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -17617,7 +17617,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -17683,7 +17683,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -17749,7 +17749,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -17815,7 +17815,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -17881,7 +17881,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -17947,7 +17947,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -18013,7 +18013,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -18079,7 +18079,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -18145,7 +18145,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -18211,7 +18211,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -18277,7 +18277,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -18343,7 +18343,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -18409,7 +18409,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -18475,7 +18475,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -18541,7 +18541,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -18607,7 +18607,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -18673,7 +18673,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -18739,7 +18739,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -18805,7 +18805,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -18871,7 +18871,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -18937,7 +18937,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -19003,7 +19003,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -19069,7 +19069,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -19135,7 +19135,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -19201,7 +19201,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -19267,7 +19267,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -19333,7 +19333,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -19399,7 +19399,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -19465,7 +19465,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -19531,7 +19531,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -19597,7 +19597,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -19663,7 +19663,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -19729,7 +19729,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -19795,7 +19795,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -19861,7 +19861,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -19927,7 +19927,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -19993,7 +19993,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -20059,7 +20059,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -20125,7 +20125,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -20191,7 +20191,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -20257,7 +20257,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -20323,7 +20323,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -20389,7 +20389,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -20455,7 +20455,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -20521,7 +20521,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -20587,7 +20587,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -20653,7 +20653,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -20719,7 +20719,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -20785,7 +20785,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -20851,7 +20851,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -20917,7 +20917,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -20983,7 +20983,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -21049,7 +21049,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -21115,7 +21115,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -21181,7 +21181,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -21230,7 +21230,7 @@
                 "language": "aaaa",
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : Medication</p> <p> <b> clinicalStatus</b> : Active <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active'\n           = 'Active', given as 'Active'})</span> </p> <p> <b> verificationStatus</b> : Unconfirmed <span> (Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code\n           'unconfirmed' = 'Unconfirmed', given as 'Unconfirmed'})</span> </p> <p> <b> category</b> : Medication</p> <p> <b> criticality</b> : high</p> <p> <b> code</b> : Penicillin G <span> (Details : {RxNorm code '7980' = 'Penicillin G', given as 'Penicillin G'})</span> </p> <p> <b> patient</b> : <a> Patient/example</a> </p> <p> <b> recordedDate</b> : 01/03/2010</p> <p> <b> recorder</b> : <a> Practitioner/13</a> </p> <h3> Reactions</h3> <table> <tr> <td> -</td> <td> <b> Manifestation</b> </td> </tr> <tr> <td> *</td> <td> Hives <span> (Details : {SNOMED CT code '247472004' = 'Weal', given as 'Hives'})</span> </td> </tr> </table> </div>"
                 },
                 "clinicalStatus": {
                     "coding": [
@@ -21251,7 +21251,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -21353,7 +21353,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -21480,7 +21480,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -21607,7 +21607,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -21734,7 +21734,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -21861,7 +21861,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -21988,7 +21988,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -22115,7 +22115,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -22242,7 +22242,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -22369,7 +22369,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -22496,7 +22496,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -22623,7 +22623,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -22750,7 +22750,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -22877,7 +22877,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -23004,7 +23004,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -23176,7 +23176,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -23348,7 +23348,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -23475,7 +23475,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -23602,7 +23602,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -23729,7 +23729,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -23802,7 +23802,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p><p><b>type</b>: allergy</p><p><b>category</b>: food</p><p><b>criticality</b>: high</p><p><b>code</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>onset</b>: 01/01/2004</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>asserter</b>: <a>Patient/example</a></p><p><b>lastOccurrence</b>: 01/06/2012</p><p><b>note</b>: The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract.</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p><p><b>exposureRoute</b>: Subcutaneous route <span>(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p><p><b>note</b>: The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p></blockquote></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p><p><b>type</b>: allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: high</p><p><b>code</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>onset</b>: 01/01/2004</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>asserter</b>: <a>Patient/example</a></p><p><b>lastOccurrence</b>: 01/06/2012</p><p><b>note</b>: The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract.</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p><p><b>exposureRoute</b>: Subcutaneous route <span>(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p><p><b>note</b>: The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p></blockquote></div>"
                 },
                 "identifier": [
                     {
@@ -23830,7 +23830,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -23932,7 +23932,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p><p><b>type</b>: allergy</p><p><b>category</b>: food</p><p><b>criticality</b>: high</p><p><b>code</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>onset</b>: 01/01/2004</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>asserter</b>: <a>Patient/example</a></p><p><b>lastOccurrence</b>: 01/06/2012</p><p><b>note</b>: The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract.</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p><p><b>exposureRoute</b>: Subcutaneous route <span>(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p><p><b>note</b>: The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p></blockquote></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p><p><b>type</b>: allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: high</p><p><b>code</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>onset</b>: 01/01/2004</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>asserter</b>: <a>Patient/example</a></p><p><b>lastOccurrence</b>: 01/06/2012</p><p><b>note</b>: The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract.</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p><p><b>exposureRoute</b>: Subcutaneous route <span>(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p><p><b>note</b>: The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p></blockquote></div>"
                 },
                 "identifier": [
                     {
@@ -23960,7 +23960,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -24062,7 +24062,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p><p><b>type</b>: allergy</p><p><b>category</b>: food</p><p><b>criticality</b>: high</p><p><b>code</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>onset</b>: 01/01/2004</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>asserter</b>: <a>Patient/example</a></p><p><b>lastOccurrence</b>: 01/06/2012</p><p><b>note</b>: The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract.</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p><p><b>exposureRoute</b>: Subcutaneous route <span>(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p><p><b>note</b>: The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p></blockquote></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p><p><b>type</b>: allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: high</p><p><b>code</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>onset</b>: 01/01/2004</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>asserter</b>: <a>Patient/example</a></p><p><b>lastOccurrence</b>: 01/06/2012</p><p><b>note</b>: The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract.</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p><p><b>exposureRoute</b>: Subcutaneous route <span>(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p><p><b>note</b>: The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p></blockquote></div>"
                 },
                 "identifier": [
                     {
@@ -24090,7 +24090,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -24192,7 +24192,7 @@
                 },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p><p><b>type</b>: allergy</p><p><b>category</b>: food</p><p><b>criticality</b>: high</p><p><b>code</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>onset</b>: 01/01/2004</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>asserter</b>: <a>Patient/example</a></p><p><b>lastOccurrence</b>: 01/06/2012</p><p><b>note</b>: The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract.</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p><p><b>exposureRoute</b>: Subcutaneous route <span>(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p><p><b>note</b>: The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p></blockquote></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p><p><b>type</b>: allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: high</p><p><b>code</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = 'Cashew nuts', given as 'Cashew nuts'})</span></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>onset</b>: 01/01/2004</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>asserter</b>: <a>Patient/example</a></p><p><b>lastOccurrence</b>: 01/06/2012</p><p><b>note</b>: The criticality is high becasue of the observed anaphylactic reaction when challenged with cashew extract.</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code '1160593' = 'cashew nut allergenic extract Injectable Product', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe reaction to subcutaneous cashew extract. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p><p><b>exposureRoute</b>: Subcutaneous route <span>(Details : {SNOMED CT code '34206005' = 'Subcutaneous route', given as 'Subcutaneous route'})</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = 'Urticaria', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p><p><b>note</b>: The patient reports that the onset of urticaria was within 15 minutes of eating cashews.</p></blockquote></div>"
                 },
                 "identifier": [
                     {
@@ -24220,7 +24220,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "criticality": "high",
                 "code": {
@@ -24376,7 +24376,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -24503,7 +24503,7 @@
                 },
                 "type": "allergy",
                 "category": [
-                    "food"
+                    "Food"
                 ],
                 "code": {
                     "coding": [
@@ -24594,7 +24594,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -24660,7 +24660,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -24726,7 +24726,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -24792,7 +24792,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -24858,7 +24858,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -24924,7 +24924,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -24990,7 +24990,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -25056,7 +25056,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -25122,7 +25122,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -25188,7 +25188,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -25254,7 +25254,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -25320,7 +25320,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -25386,7 +25386,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -25452,7 +25452,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -25518,7 +25518,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -25584,7 +25584,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -25650,7 +25650,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -25716,7 +25716,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -25782,7 +25782,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -25848,7 +25848,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -25914,7 +25914,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -25980,7 +25980,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -26046,7 +26046,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -26112,7 +26112,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -26178,7 +26178,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -26244,7 +26244,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -26310,7 +26310,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -26376,7 +26376,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -26442,7 +26442,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -26508,7 +26508,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -26574,7 +26574,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -26640,7 +26640,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -26706,7 +26706,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -26772,7 +26772,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -26838,7 +26838,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -26904,7 +26904,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -26970,7 +26970,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -27036,7 +27036,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -27102,7 +27102,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -27168,7 +27168,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -27234,7 +27234,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -27300,7 +27300,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -27366,7 +27366,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -27432,7 +27432,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -27498,7 +27498,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -27564,7 +27564,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -27630,7 +27630,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -27696,7 +27696,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -27762,7 +27762,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -27828,7 +27828,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -27894,7 +27894,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -27960,7 +27960,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -28026,7 +28026,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -28092,7 +28092,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -28158,7 +28158,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -28224,7 +28224,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -28290,7 +28290,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -28356,7 +28356,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -28422,7 +28422,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -28488,7 +28488,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -28554,7 +28554,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -28620,7 +28620,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -28686,7 +28686,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -28752,7 +28752,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -28818,7 +28818,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -28884,7 +28884,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -28950,7 +28950,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -29016,7 +29016,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -29082,7 +29082,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -29148,7 +29148,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -29214,7 +29214,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -29280,7 +29280,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -29346,7 +29346,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -29412,7 +29412,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -29478,7 +29478,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -29544,7 +29544,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -29610,7 +29610,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -29676,7 +29676,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -29742,7 +29742,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -29808,7 +29808,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -29874,7 +29874,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -29940,7 +29940,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -30006,7 +30006,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -30072,7 +30072,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -30138,7 +30138,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -30204,7 +30204,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -30270,7 +30270,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -30336,7 +30336,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -30402,7 +30402,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -30468,7 +30468,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -30534,7 +30534,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -30600,7 +30600,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -30666,7 +30666,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -30732,7 +30732,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -30798,7 +30798,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -30864,7 +30864,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -30930,7 +30930,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -30996,7 +30996,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -31062,7 +31062,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -31128,7 +31128,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -31194,7 +31194,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -31260,7 +31260,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -31326,7 +31326,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -31392,7 +31392,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -31458,7 +31458,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -31524,7 +31524,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -31590,7 +31590,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -31656,7 +31656,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -31722,7 +31722,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -31788,7 +31788,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -31854,7 +31854,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -31920,7 +31920,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -31986,7 +31986,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -32052,7 +32052,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -32118,7 +32118,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -32184,7 +32184,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -32250,7 +32250,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -32316,7 +32316,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -32382,7 +32382,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -32448,7 +32448,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -32514,7 +32514,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -32580,7 +32580,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -32646,7 +32646,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -32712,7 +32712,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -32778,7 +32778,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -32844,7 +32844,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -32910,7 +32910,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -32976,7 +32976,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -33042,7 +33042,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -33108,7 +33108,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -33174,7 +33174,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -33240,7 +33240,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -33306,7 +33306,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -33372,7 +33372,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {
@@ -33438,7 +33438,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "unable-to-assess",
                 "code": {
@@ -33504,7 +33504,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "low",
                 "code": {
@@ -33570,7 +33570,7 @@
                     ]
                 },
                 "category": [
-                    "medication"
+                    "Medication"
                 ],
                 "criticality": "high",
                 "code": {

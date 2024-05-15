@@ -128,7 +128,7 @@ function drawPieChart() {
 
     svg.append("text")
         .attr("text-anchor", "middle")
-        .attr('font-size', '30px')
+        .attr('font-size', '24px')
         .attr('y', 0)
         .text(`Total: ${total}`);
 }
@@ -241,7 +241,7 @@ function drawBarChart() {
         .call(d3.axisBottom(x).tickSizeOuter(0));
 
     const y = d3.scaleLinear()
-        .domain([0, 200])
+        .domain([0, 100])
         .range([height, 0]);
 
     svg.append("g")

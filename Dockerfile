@@ -1,18 +1,22 @@
 # Use the official Python image as a base image
 FROM python:3.11
 
-# Set the working directory in the container
-WORKDIR /workspace
+# Set environment variables to prevent .pyc files and enable unbuffered output
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
-# Copy the requirements file into the container
-COPY requirements.txt /workspace/
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Copy only the requirements file to leverage Docker cache
+COPY requirements.txt .
 
 # Install dependencies
 RUN pip install --upgrade pip && \
     pip install -r requirements.txt
 
 # Copy the rest of the application code into the container
-COPY . /workspace/
+COPY . .
 
 # Expose port 8000 for the Django development server
 EXPOSE 8000

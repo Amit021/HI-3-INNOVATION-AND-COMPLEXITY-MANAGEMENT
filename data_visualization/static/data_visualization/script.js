@@ -47,8 +47,8 @@ function transformDataForTreemap(data) {
 }
 
 function drawPieChart() {
-    const pie_width = 1080,
-          pie_height = 768,
+    const pie_width = 1080 * 0.7,
+          pie_height = 768 * 0.7,
           pie_margin = 100;
 
     const radius = Math.min(pie_width, pie_height) / 2 - pie_margin;
@@ -150,8 +150,8 @@ function drawTreemap(category, data) {
     const groupedData = d3.group(data, d => d.specific_reason);
     console.log("Grouped data:", groupedData);
 
-    const width = 1080;
-    const height = 768; // Adjust this value to change the height of the treemap
+    const width = 1080 * 0.7;
+    const height = 768 * 0.7; // Adjust this value to change the height of the treemap
     const svg = treemapContainer.append("svg")
         .attr("width", width)
         .attr("height", height)
@@ -218,13 +218,13 @@ function drawTreemap(category, data) {
 
 function drawBarChart() {
     const margin = { top: 100, right: 30, bottom: 20, left: 50 },
-          width = 1080 * 0.9,
-          height = 768 * 0.8;
+          width = 1080 * 0.7 * 0.9,
+          height = 768 * 0.7 * 0.8;
 
     const svg = d3.select("#my_dataviz2")
         .append("svg")
-        .attr("width", 1080)
-        .attr("height", 768)
+        .attr("width", 1080 * 0.7)
+        .attr("height", 768 * 0.7)
         .append("g")
         .attr("transform", `translate(${margin.left},${margin.top})`);
 

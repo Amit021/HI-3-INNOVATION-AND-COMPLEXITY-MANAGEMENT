@@ -8,5 +8,5 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - .:/usr/src/app
+      - .:/workspaces/HI-3-INNOVATION-AND-COMPLEXITY-MANAGEMENT
     command: "./setup.sh"

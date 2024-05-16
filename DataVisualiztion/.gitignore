@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+
+# Django-specific files
+db.sqlite3
+/static/
+/media/
+
+# Virtual environment
+env/
+
+# VS Code settings
+.vscode/
+
+# Local configuration files that may contain secrets
+*.json
+
+# macOS system files
+.DS_Store
+
+# Python virtual environment
+*.venv
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp

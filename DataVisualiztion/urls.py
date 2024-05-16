@@ -6,4 +6,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('data_visualization/', include('data_visualization.urls')),  
     path('', views.allergy_visualization_view, name='home'),
+    path('post-allergy-data/', views.post_allergy_data, name='post_allergy_data'),
 ]

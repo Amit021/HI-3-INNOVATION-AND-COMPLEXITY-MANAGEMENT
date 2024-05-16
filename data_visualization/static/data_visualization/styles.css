@@ -29,10 +29,43 @@ polyline {
     fill: black;
 }
 
-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+/* Additional CSS to style the form and button */
+#allergy-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#allergy-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#allergy-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#allergy-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#allergy-form button:hover {
+    background-color: #45a049;
 }
 
 .bar-chart-section h2 {
@@ -90,7 +123,6 @@ rect:hover {
     font-weight: bold;
     margin-bottom: 10px; /* Optional: add some space between the heading and the treemap */
     color: rgba(1, 11, 22, 0.795); /* Optional: adjust the color */
-
 }
 
 .tooltip {
@@ -104,7 +136,4 @@ rect:hover {
     border: 0px;
     border-radius: 8px;
     pointer-events: none;
-    
 }
-
-

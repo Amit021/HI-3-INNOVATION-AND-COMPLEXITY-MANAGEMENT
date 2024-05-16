@@ -1,10 +1,13 @@
 from django.shortcuts import render
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponseBadRequest
+from django.views.decorators.http import require_POST
+from django.views.decorators.csrf import csrf_exempt
 import requests,re, json, logging
 from django.core.cache import cache
 from django.conf import settings
 from pathlib import Path
-
+import uuid
+from datetime import datetime, timezone
 
 def fetch_allergy_data():
     # Define a cache key
@@ -108,3 +111,109 @@ def fetch_allergy_data_json(request):
     raw_data = fetch_allergy_data().get("entry", [])
     allergies = parse_allergy_data(raw_data)
     return JsonResponse(allergies, safe=False) 
+
+logger = logging.getLogger(__name__)
+
+@csrf_exempt
+@require_POST
+
+def post_allergy_data(request):
+    try:
+        new_entry_data = json.loads(request.body)
+        logger.info(f"Received new entry data: {new_entry_data}")
+
+        unique_id = str(uuid.uuid4())  # Generate a unique ID
+        current_time = datetime.now(timezone.utc).isoformat()  # Generate current time in ISO 8601 format
+        
+        new_entry = {
+            "fullUrl": f"https://hapi.fhir.org/baseR4/AllergyIntolerance/{unique_id}",
+            "resource": {
+                "resourceType": "AllergyIntolerance",
+                "id": unique_id,
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": current_time,
+                    "source": "#newdata",
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"
+                    ]
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+                            "code": "inactive"
+                        }
+                    ]
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+                            "code": "confirmed"
+                        }
+                    ]
+                },
+                "category": [
+                    new_entry_data.get("category", "unknown")
+                ],
+                "criticality": new_entry_data.get("criticality", "unknown"),
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "unknown",
+                            "display": new_entry_data["specific_reason"]
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": f"Patient/{new_entry_data.get('patient', 'unknown')}"
+                },
+                "recorder": {
+                    "reference": f"Practitioner/{new_entry_data.get('recorder', 'unknown')}"
+                },
+                "reaction": [
+                    {
+                        "manifestation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "unknown",
+                                        "display": new_entry_data["specific_reason"]
+                                    }
+                                ],
+                                "text": new_entry_data["specific_reason"]
+                            }
+                        ],
+                        "severity": "Unknow"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    except json.JSONDecodeError:
+        logger.error("JSON decode error")
+        return HttpResponseBadRequest("Invalid JSON")
+
+    file_path = Path(settings.BASE_DIR) / 'data_visualization' / 'jsonResponse.json'
+    try:
+        with open(file_path, 'r+') as file:
+            data = json.load(file)
+            if 'entry' in data:
+                data['entry'].append(new_entry)
+            else:
+                data['entry'] = [new_entry]
+            file.seek(0)
+            json.dump(data, file, indent=4)
+            file.truncate()
+    except FileNotFoundError:
+        logger.error(f"File not found: {file_path}")
+        return HttpResponseBadRequest("File not found")
+
+    cache.delete('allergy_data')
+
+    return JsonResponse({"status": "success"}, status=200)

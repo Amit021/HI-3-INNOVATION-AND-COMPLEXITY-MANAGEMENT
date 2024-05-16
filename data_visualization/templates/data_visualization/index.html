@@ -7,11 +7,40 @@
     <title>Amits Data Visualizations</title>
     <link rel="stylesheet" href="{% static 'data_visualization/styles.css' %}">
     <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Inline script to verify JavaScript execution
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Inline script is running');
+        });
+    </script>
     <script src="{% static 'data_visualization/script.js' %}" defer></script>
 </head>
 <body>
-    <h1>Allergy Data Visualizations</h1>
+    
+    <div>
+    <!-- Form for submitting new allergy data -->
+    <form id="allergy-form">
+        <h1>Post in FHIR format</h1>
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" required>
 
+        <label for="criticality">Criticality:</label>
+        <input type="text" id="criticality" name="criticality" required>
+
+        <label for="specific_reason">Specific Reason:</label>
+        <input type="text" id="specific_reason" name="specific_reason" required>
+
+        <label for="patient">Patient:</label>
+        <input type="text" id="patient" name="patient" required>
+
+        <label for="recorder">Recorder:</label>
+        <input type="text" id="recorder" name="recorder" required>
+
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    <h1>Allergy Data Visualization</h1>
     <div class="chart" id="my_dataviz">
         <h2>Pie Chart: Allergy Categories</h2>
         <svg id="pieChart" width="0" height="0"></svg>
@@ -22,9 +51,9 @@
     </div>
 
     <div class="chart" id="my_dataviz2">
-        <h2>Stacked Bar Chart: Specific Reasons by Criticality</h2>
+        <h2>Stacked Bar Chart: Criticality for Each Category</h2>
         <svg id="barChartSection" width="0" height="0"></svg>
-        
     </div>
+    
 </body>
 </html>

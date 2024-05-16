@@ -1,4 +1,3 @@
-
 function fetchAllergyData() {
     return fetch('/data_visualization/api/allergy-data/')
         .then(response => {
@@ -48,8 +47,8 @@ function transformDataForTreemap(data) {
 }
 
 function drawPieChart() {
-    const pie_width = 1080,
-          pie_height = 768,
+    const pie_width = 1920,
+          pie_height = 1080,
           pie_margin = 100;
 
     const radius = Math.min(pie_width, pie_height) / 2 - pie_margin;
@@ -129,7 +128,7 @@ function drawPieChart() {
 
     svg.append("text")
         .attr("text-anchor", "middle")
-        .attr('font-size', '24px')
+        .attr('font-size', '30px')
         .attr('y', 0)
         .text(`Total: ${total}`);
 }
@@ -151,8 +150,8 @@ function drawTreemap(category, data) {
     const groupedData = d3.group(data, d => d.specific_reason);
     console.log("Grouped data:", groupedData);
 
-    const width = 1080;
-    const height = 768; // Adjust this value to change the height of the treemap
+    const width = 1980;
+    const height = 1080; // Adjust this value to change the height of the treemap
     const svg = treemapContainer.append("svg")
         .attr("width", width)
         .attr("height", height)
@@ -219,13 +218,13 @@ function drawTreemap(category, data) {
 
 function drawBarChart() {
     const margin = { top: 100, right: 30, bottom: 20, left: 50 },
-          width = 1080 * 0.9,
-          height = 768 * 0.8;
+          width = 1920 * 0.9,
+          height = 1080 * 0.8;
 
     const svg = d3.select("#my_dataviz2")
         .append("svg")
-        .attr("width", 1080)
-        .attr("height", 768)
+        .attr("width", 1920)
+        .attr("height", 1080)
         .append("g")
         .attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -242,7 +241,7 @@ function drawBarChart() {
         .call(d3.axisBottom(x).tickSizeOuter(0));
 
     const y = d3.scaleLinear()
-        .domain([0, 100])
+        .domain([0, 200])
         .range([height, 0]);
 
     svg.append("g")
@@ -313,17 +312,78 @@ function drawBarChart() {
         });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+console.log('script.js is running');
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Document is ready');
+
     fetchAllergyData().then(data => {
         allergyData = data;
         drawPieChart();
         drawBarChart();
 
         const groupedByCategory = d3.group(allergyData, d => d.category);
+        console.log('Grouped by category:', groupedByCategory); // Debugging line
         for (const [category, data] of groupedByCategory) {
             drawTreemap(category, data);
         }
     }).catch(error => {
         console.error("Error loading data for visualization:", error);
+    });
+
+    // Handle form submission using plain JavaScript
+    document.getElementById('allergy-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        console.log('Form submission intercepted');
+
+        var formData = {
+            id: Date.now().toString(),  // Generate a unique ID
+            category: document.getElementById('category').value,
+            criticality: document.getElementById('criticality').value,
+            specific_reason: document.getElementById('specific_reason').value,
+            patient: document.getElementById('patient').value,
+            recorder: document.getElementById('recorder').value
+        };
+
+        console.log('Form data:', formData);
+
+        fetch('/post-allergy-data/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => {
+            console.log('Response status:', response.status); // Log response status
+            if (!response.ok) {
+                throw new Error(`Network response was not ok: ${response.statusText}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Success response:', data);
+            alert('Data submitted successfully!');
+            return fetchAllergyData();
+        })
+        .then(data => {
+            allergyData = data;
+            d3.select("#my_dataviz").selectAll("*").remove();
+            d3.select("#treemapsContainer").selectAll("*").remove();
+            d3.select("#my_dataviz2").selectAll("*").remove();
+            drawPieChart();
+            drawBarChart();
+            const groupedByCategory = d3.group(allergyData, d => d.category);
+            console.log('Grouped by category after submission:', groupedByCategory); // Debugging line
+            for (const [category, data] of groupedByCategory) {
+                drawTreemap(category, data);
+            }
+        })
+        .catch(error => {
+            console.error('Error response:', error);
+            alert('Failed to submit data.');
+        });
+
+        document.getElementById('allergy-form').reset();
     });
 });

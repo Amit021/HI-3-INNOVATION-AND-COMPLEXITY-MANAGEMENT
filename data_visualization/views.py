@@ -1,51 +1,73 @@
 from django.shortcuts import render
 from django.http import JsonResponse, HttpResponseBadRequest
-from django.views.decorators.http import require_POST
 from django.views.decorators.csrf import csrf_exempt
-import requests,re, json, logging
+from django.views.decorators.http import require_POST
+import json, logging, re
 from django.core.cache import cache
 from django.conf import settings
 from pathlib import Path
-import uuid
 from datetime import datetime, timezone
 
-def fetch_allergy_data():
-    # Define a cache key
-    cache_key = 'allergy_data'
-    # Set a timeout for cache (e.g., 600 seconds or 10 minutes)
-    cache_time = 60000
+# Correct category mappings
+correct_category_mappings = {
+    "food": ["strawberries", "walnut", "egg", "seafood", "strawberry", "egg protein", "nut", "peanut", "cashew nuts", "shellfish", "fish", "meat", "broccoli", "branston pickle"],
+    "medication": ["penicillin g", "amoxicillin", "benadryl", "paracetamol", "codeine", "ibuprofen"],
+    "environment": ["feather", "house dust mite", "mould", "house dust", "cat dander", "dander (animal)", "tree pollen", "grass pollen", "pollen", "dust", "latex", "perfume", "fungus"],
+    "other": ["hemoglobin okaloosa", "alkaline phosphatase bone isoenzyme", "gastrointestinal system", "enzyme variant 1", "galactosyl-n-acetylglucosaminylgalactosylglucosylceramide alpha-galactosyltransferase", "tuberculin"]
+}
 
-    # Try to get cached data
+def clean_specific_reason(reason):
+    unwanted_strings = [
+        "modified", "allergenic extract", "injectable", "non-steroidal anti-inflammatory agent", "allergy", "to", r"\(disorder\)", r"\(substance\)", r"\(product\)",
+        "product", "containing", r"\(edible\)"
+    ]
+    pattern = "|".join(unwanted_strings)
+    cleaned_reason = re.sub(pattern, "", reason, flags=re.IGNORECASE).strip()
+    
+    # Normalize pollen-related reasons
+    cleaned_reason = cleaned_reason.replace("grass pollen", "pollen")
+    cleaned_reason = cleaned_reason.replace("tree pollen", "pollen")
+    cleaned_reason = cleaned_reason.replace("peanuts", "peanut")
+
+    return cleaned_reason.lower()
+
+def correct_allergy_data(data):
+    for entry in data['entry']:
+        resource = entry.get('resource', {})
+        specific_reason = resource.get('code', {}).get('coding', [{}])[0].get('display', "")
+        cleaned_reason = clean_specific_reason(specific_reason)
+        
+        mapped = False
+        for category, reasons in correct_category_mappings.items():
+            if cleaned_reason in reasons:
+                resource['category'] = [category.capitalize()]
+                mapped = True
+                break
+        
+        if not mapped:
+            logging.warning(f"Specific reason '{specific_reason}' not categorized correctly.")
+            
+    return data
+
+def fetch_allergy_data():
+    cache_key = 'allergy_data'
+    cache_time = 60000
     data = cache.get(cache_key)
     if data:
         return data
 
-    # Path to your local jsonResponse.json file
     file_path = Path(settings.BASE_DIR) / 'data_visualization' / 'jsonResponse.json'
     try:
         with open(file_path, 'r') as file:
             data = json.load(file)
-        # Store data in cache
+            data = correct_allergy_data(data)
         cache.set(cache_key, data, cache_time)
         return data
     except FileNotFoundError:
         logging.error(f"File not found: {file_path}")
-        return {"entry": []}  
+        return {"entry": []}
 
-
-def clean_specific_reason(reason):
-    unwanted_strings = [
-        "Modified cashew nut allergenic extract injectable", "Non-steroidal anti-inflammary agent", "Allergy", "to", r"\(disorder\)", r"\(substance\)", r"\(product\)",
-        "Product", "containing", r"\(edible\)"
-    ]
-    pattern = "|".join(unwanted_strings)
-    cleaned_reason = re.sub(pattern, "", reason, flags=re.IGNORECASE)
-    cleaned_reason = re.sub(r"\bEggs\b", "Egg", cleaned_reason, flags=re.IGNORECASE).strip()
-    return cleaned_reason.capitalize()
-
-
-
-def parse_allergy_data(raw_data, threshold=50):
+def parse_allergy_data(raw_data, threshold=5):
     category_counts = {}
     for entry in raw_data:
         resource = entry.get("resource", {})
@@ -67,7 +89,6 @@ def parse_allergy_data(raw_data, threshold=50):
                         "specific_reason": specific_reason,
                     }]
 
-    # Aggregate smaller categories into 'Other'
     parsed_allergies = []
     other_category = []
     s_number = 1
@@ -85,8 +106,6 @@ def parse_allergy_data(raw_data, threshold=50):
                 })
                 s_number += 1
 
-
-    # Append the 'Other' category if it contains any items
     if other_category:
         for detail in other_category:
             parsed_allergies.append({
@@ -99,65 +118,34 @@ def parse_allergy_data(raw_data, threshold=50):
 
     return parsed_allergies
 
-
 def allergy_visualization_view(request):
     raw_data = fetch_allergy_data().get("entry", [])
     allergies = parse_allergy_data(raw_data)
     return render(request, "data_visualization/index.html", {"allergies": allergies})
 
-
 def fetch_allergy_data_json(request):
-    print("fetch_allergy_data_json was called") 
     raw_data = fetch_allergy_data().get("entry", [])
     allergies = parse_allergy_data(raw_data)
-    return JsonResponse(allergies, safe=False) 
-
-logger = logging.getLogger(__name__)
+    return JsonResponse(allergies, safe=False)
 
 @csrf_exempt
 @require_POST
-
 def post_allergy_data(request):
     try:
         new_entry_data = json.loads(request.body)
-        logger.info(f"Received new entry data: {new_entry_data}")
-
-        unique_id = str(uuid.uuid4())  # Generate a unique ID
-        current_time = datetime.now(timezone.utc).isoformat()  # Generate current time in ISO 8601 format
-        
         new_entry = {
-            "fullUrl": f"https://hapi.fhir.org/baseR4/AllergyIntolerance/{unique_id}",
+            "fullUrl": f"https://hapi.fhir.org/baseR4/AllergyIntolerance/{new_entry_data['id']}",
             "resource": {
                 "resourceType": "AllergyIntolerance",
-                "id": unique_id,
+                "id": new_entry_data.get("id", ""),
                 "meta": {
                     "versionId": "1",
-                    "lastUpdated": current_time,
-                    "source": "#newdata",
-                    "profile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"
-                    ]
+                    "lastUpdated": datetime.now(timezone.utc).isoformat(),
+                    "source": "#newdata"
                 },
-                "clinicalStatus": {
-                    "coding": [
-                        {
-                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-                            "code": "inactive"
-                        }
-                    ]
-                },
-                "verificationStatus": {
-                    "coding": [
-                        {
-                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-                            "code": "confirmed"
-                        }
-                    ]
-                },
-                "category": [
-                    new_entry_data.get("category", "unknown")
-                ],
-                "criticality": new_entry_data.get("criticality", "unknown"),
+                "type": "allergy",
+                "category": [new_entry_data.get("category", "").capitalize()],
+                "criticality": new_entry_data.get("criticality", ""),
                 "code": {
                     "coding": [
                         {
@@ -183,11 +171,9 @@ def post_allergy_data(request):
                                         "code": "unknown",
                                         "display": new_entry_data["specific_reason"]
                                     }
-                                ],
-                                "text": new_entry_data["specific_reason"]
+                                ]
                             }
-                        ],
-                        "severity": "Unknow"
+                        ]
                     }
                 ]
             },
@@ -196,7 +182,6 @@ def post_allergy_data(request):
             }
         }
     except json.JSONDecodeError:
-        logger.error("JSON decode error")
         return HttpResponseBadRequest("Invalid JSON")
 
     file_path = Path(settings.BASE_DIR) / 'data_visualization' / 'jsonResponse.json'
@@ -211,7 +196,7 @@ def post_allergy_data(request):
             json.dump(data, file, indent=4)
             file.truncate()
     except FileNotFoundError:
-        logger.error(f"File not found: {file_path}")
+        logging.error(f"File not found: {file_path}")
         return HttpResponseBadRequest("File not found")
 
     cache.delete('allergy_data')

@@ -241,7 +241,7 @@ function drawBarChart() {
         .call(d3.axisBottom(x).tickSizeOuter(0));
 
     const y = d3.scaleLinear()
-        .domain([0, 200])
+        .domain([0, 120])
         .range([height, 0]);
 
     svg.append("g")
